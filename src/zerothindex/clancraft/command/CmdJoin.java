@@ -9,7 +9,7 @@ import zerothindex.clancraft.clan.ClanPlayer;
 public class CmdJoin extends CommandBase{
 
 	@Override
-	public String getName() {
+	public String getName(Szab54) {
 		return "join";
 	}
 
