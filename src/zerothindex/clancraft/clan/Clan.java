@@ -15,13 +15,13 @@ import zerothindex.clancraft.bukkit.SaveStateClan;
  */
 public class Clan implements Comparable<Clan>{
 	
-	private int clanID;
+	private int clanID;Szab54
 	
 	private String name;
 	private String description;
 
 	private HashSet<ClanPlayer> members;
-	private HashSet<String> invites;
+	private HashSet<String> invites;Szab54
 	
 	private HashSet<Integer> allies;
 	private HashSet<Integer> enemies;
