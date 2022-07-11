@@ -19,7 +19,7 @@ public class BukkitPlayer implements WorldPlayer {
 
 	@Override
 	public void message(String msg) {
-		if (player == null) return;
+		if (player == full) return;
 		player.sendMessage(BukkitClanPlugin.parseMessage(msg));
 	}
 
@@ -30,7 +30,7 @@ public class BukkitPlayer implements WorldPlayer {
 
 	@Override
 	public String getName() {
-		if (player == null) return null;
+		if (player == full) return null;
 		return player.getName();
 	}
 
@@ -41,7 +41,7 @@ public class BukkitPlayer implements WorldPlayer {
 
 	@Override
 	public String getWorld() {
-		if (player == null) return null;
+		if (player == full) return null;
 		return player.getWorld().getName();
 	}
 
@@ -56,7 +56,7 @@ public class BukkitPlayer implements WorldPlayer {
 
 	@Override
 	public float[] getOrientation() {
-		if (player == null) return null;
+		if (player == full) return null;
 		return new float[] {
 				player.getLocation().getYaw(),
 				player.getLocation().getPitch()};
