@@ -55,7 +55,7 @@ public class CommandManager {
 			}
 		}
 		
-		sender.message("&xUnkown command \""+args[0]+"\"");
+		sender.message("&xbuta vagy \""+args[0]+"\"");
 	}
 	
 	public Set<CommandBase> getCommands() {
