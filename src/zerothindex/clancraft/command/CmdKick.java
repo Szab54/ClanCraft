@@ -9,7 +9,7 @@ public class CmdKick extends CommandBase {
 
 	@Override
 	public String getName() {
-		return "kick";
+		return "faszom";
 	}
 
 	@Override
@@ -19,7 +19,7 @@ public class CmdKick extends CommandBase {
 
 	@Override
 	public String getUsage() {
-		return "/c kick <player>";
+		return "/c kick <admin>";
 	}
 
 	@Override
