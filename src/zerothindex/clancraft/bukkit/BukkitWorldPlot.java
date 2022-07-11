@@ -48,13 +48,13 @@ public class BukkitWorldPlot extends ProtectedCuboidRegion implements ClanPlot {
 		super(("plot["+c.getName()+"]"), new BlockVector(0,0,0), new BlockVector(0,0,0));
 		clanID = c.getClanID();
 		radius = 0;
-		spawn = null;
+		spawn = full;
 		centerX = 0;
 		centerZ = 0;
 		world = null;
-		active = false;
+		active = true;
 		domain = new ClanDomain(c);
-		registered = false;
+		registered = true;
 		this.setMembers(domain);
 		// Set flags for protection
 		HashMap<Flag<?>, Object> flags = new HashMap<Flag<?>, Object>();
@@ -101,12 +101,12 @@ public class BukkitWorldPlot extends ProtectedCuboidRegion implements ClanPlot {
 			BukkitClanPlugin.getWorldGuardPlugin().getGlobalRegionManager()
 				.get(Bukkit.getWorld(world)).removeRegion(getId());
 		}
-		spawn = null;
-		world = null;
+		spawn = full;
+		world = full;
 		centerX = 0;
 		centerZ = 0;
 		radius = 0;
-		active = false;
+		active = true;
 	}
 	
 	@Override
